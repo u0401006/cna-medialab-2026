@@ -37,7 +37,7 @@ html,body{height:100%;overflow:hidden;font-family:"Noto Sans TC","Microsoft Jhen
 .img-container img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;box-shadow:var(--shadow)}
 .video-wrap{flex:1;position:relative;border-radius:10px;overflow:hidden;background:#000;min-height:160px}
 .video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-p.body-text{font-size:clamp(.88rem,1.5vw,1.05rem);line-height:1.8;color:var(--text);max-width:720px}
+p.body-text{font-size:clamp(.9rem,1.6vw,1.1rem);line-height:1.85;color:var(--text);max-width:760px}
 ul.bullets{list-style:none;padding:0;display:flex;flex-direction:column;gap:8px}
 ul.bullets li{display:flex;align-items:flex-start;gap:9px;font-size:clamp(.82rem,1.4vw,1rem);line-height:1.7;color:var(--text)}
 ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:.58em;flex-shrink:0}
@@ -47,12 +47,6 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
 .card-label{font-size:.75rem;font-weight:700;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;margin-bottom:5px}
 .card-text{font-size:clamp(.78rem,1.2vw,.92rem);color:var(--text2);line-height:1.6}
 .tag{display:inline-block;background:var(--accent-l);color:var(--accent);border-radius:6px;padding:3px 10px;font-size:.75rem;font-weight:700;letter-spacing:.06em;margin-bottom:6px}
-.stat-row{display:flex;gap:clamp(18px,2.8vw,36px);flex-wrap:wrap;justify-content:center}
-.stat-item{text-align:center}
-.stat-num{font-size:clamp(1.8rem,4.5vw,3.6rem);font-weight:700;color:var(--accent);line-height:1}
-.stat-label{font-size:clamp(.72rem,1.1vw,.9rem);color:var(--text2);margin-top:5px;line-height:1.5}
-.quote-block{border-left:4px solid var(--accent);padding:14px 18px;background:var(--accent-l);border-radius:0 8px 8px 0;max-width:720px}
-.quote-block p{font-size:clamp(.88rem,1.5vw,1.05rem);line-height:1.8;color:var(--text)}
 .diagram-wrap{display:flex;align-items:center;justify-content:center;flex:1;min-height:0}
 .slide-end{background:linear-gradient(145deg,#1B5FAA 0%,#0d3a73 100%);color:#fff;align-items:center;justify-content:center;text-align:center}
 .end-title{font-size:clamp(1.3rem,3.2vw,2.6rem);font-weight:700;line-height:1.3;margin-bottom:18px}
@@ -87,6 +81,7 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
 </div>
 <div id="slides">
 
+<!-- 01 封面 -->
 <div class="slide slide-hero active" data-title="封面">
   <div class="slide-body" style="align-items:center;justify-content:center;text-align:center">
     <div class="hero-pre">中央社媒體實驗室</div>
@@ -104,6 +99,7 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
   </div>
 </div>
 
+<!-- 02 2024 起點 -->
 <div class="slide slide-divider" data-title="2024 起點">
   <div class="slide-body" style="align-items:center;justify-content:center">
     <div class="div-year">2024</div>
@@ -112,6 +108,7 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
   </div>
 </div>
 
+<!-- 03 CMS -->
 <div class="slide" data-title="CMS 平台">
   <div class="slide-title">新世代智慧內容管理平台</div>
   <div class="slide-body">
@@ -131,11 +128,13 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
   </div>
 </div>
 
+<!-- 04 共編 -->
 <div class="slide" data-title="即時共編">
   <div class="slide-title">即時共編——搶時效，集思廣益</div>
-  <div class="slide-body"><div class="video-wrap"><iframe src="https://drive.google.com/file/d/1hFh3Egdl50kmYLVGryIUAPzBKZBS-D-j/preview" allowfullscreen></iframe></div></div>
+  <div class="slide-body"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/930J38E2i2k" allowfullscreen allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"></iframe></div></div>
 </div>
 
+<!-- 05 志明 -->
 <div class="slide slide-divider" data-title="2025 志明">
   <div class="slide-body" style="align-items:center;justify-content:center">
     <div class="div-year">2025</div>
@@ -144,6 +143,7 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
   </div>
 </div>
 
+<!-- 06 志明介面 -->
 <div class="slide" data-title="志明 AI Workflow">
   <div class="slide-title">志明編輯助手——AI Workflow</div>
   <div class="slide-body">
@@ -160,16 +160,19 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
   </div>
 </div>
 
+<!-- 07 事實查核 -->
 <div class="slide" data-title="事實查核示範">
   <div class="slide-title">事實查核功能示範</div>
-  <div class="slide-body"><div class="video-wrap"><iframe src="https://drive.google.com/file/d/1SSG0XSfFNsUQ5QcIg0lgVPOQEHtyIxPQ/preview" allowfullscreen></iframe></div></div>
+  <div class="slide-body"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/0rGbmT5NauY" allowfullscreen allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"></iframe></div></div>
 </div>
 
+<!-- 08 查核點 -->
 <div class="slide" data-title="查核點示範">
   <div class="slide-title">稿件查核點——自動標記需確認事項</div>
-  <div class="slide-body"><div class="video-wrap"><iframe src="https://drive.google.com/file/d/12f5HOf-oXQE3sYQx3JcZ0NN6aqX9NYVC/preview" allowfullscreen></iframe></div></div>
+  <div class="slide-body"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/MnlVfR8IqG0" allowfullscreen allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"></iframe></div></div>
 </div>
 
+<!-- 09 2026 Agent -->
 <div class="slide slide-divider" data-title="2026 Agent">
   <div class="slide-body" style="align-items:center;justify-content:center">
     <div class="div-year">2026</div>
@@ -178,62 +181,33 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
   </div>
 </div>
 
-<div class="slide" data-title="財務行政工具">
-  <div class="slide-title">財務行政 AI 工具</div>
-  <div class="slide-body">
-    <div class="two-col">
-      <div style="display:flex;flex-direction:column;gap:10px;min-height:0">
-        <div class="cards-row col2">
-          <div class="card"><div class="card-label">報帳王</div><div class="card-text">記者報帳工具，簡化費用申報流程</div></div>
-          <div class="card"><div class="card-label">對帳助手</div><div class="card-text">小額捐款自動對帳，減少人工核對</div></div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;flex:1;min-height:0">
-          <div class="img-container"><img src="https://img-hosting.u0401006.workers.dev/i/V3yGoHZ.png" alt="稿費管理" loading="lazy"></div>
-          <div class="img-container"><img src="https://img-hosting.u0401006.workers.dev/i/fYddqoM.png" alt="稿單管理" loading="lazy"></div>
-        </div>
-      </div>
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1Zl-HVQCI-Jye4iRgDd2h8T_wKoPqoqm1/preview" allowfullscreen></iframe></div>
-    </div>
-  </div>
-</div>
-
+<!-- 10 影音工具 -->
 <div class="slide" data-title="影音製作工具">
   <div class="slide-title">影音製作 AI 工具</div>
   <div class="slide-body">
     <div class="two-col">
-      <div style="display:flex;flex-direction:column;gap:10px;min-height:0">
+      <div style="display:flex;flex-direction:column;gap:12px;min-height:0">
         <span class="tag">影音產製</span>
-        <div class="card"><div class="card-label">影片排播系統</div><div class="card-text">自建影音新聞文稿系統，整合影片管理</div></div>
+        <div class="card"><div class="card-label">影片排播系統</div><div class="card-text">自建影音新聞文稿系統，整合影片管理排播流程</div></div>
         <div class="card"><div class="card-label">AI 輔助剪片</div><div class="card-text">讓同仁從繁瑣操作中解放，花更多時間構思創意、探索議題</div></div>
         <div class="img-container" style="flex:1;min-height:0"><img src="https://img-hosting.u0401006.workers.dev/i/OnOearZ.png" alt="影片排播系統" loading="lazy"></div>
       </div>
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1niSsqcgwkmd7KSvMFWNtDSMY4ovAOPzb/preview" allowfullscreen></iframe></div>
+      <div class="video-wrap"><iframe src="https://www.youtube.com/embed/_QBDCt5zvME" allowfullscreen allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"></iframe></div>
     </div>
   </div>
 </div>
 
-<div class="slide slide-divider" data-title="零點擊時代">
-  <div class="slide-body" style="align-items:center;justify-content:center">
-    <div class="div-year">轉折點</div>
-    <div class="div-title">海嘯席捲而來</div>
-    <div class="div-subtitle" style="font-size:clamp(1rem,2vw,1.4rem);font-weight:500">零點擊時代</div>
-  </div>
-</div>
-
-<div class="slide" data-title="零點擊說明">
-  <div class="slide-title">資訊入口正在改變</div>
+<!-- 11 零點擊（合併） -->
+<div class="slide" data-title="零點擊時代">
+  <div class="slide-title">我們持續優化內部工具的同時，海嘯正在席捲而來</div>
   <div class="slide-body">
-    <div class="stat-row" style="margin-bottom:clamp(10px,1.8vh,20px)">
-      <div class="stat-item"><div class="stat-num">↓</div><div class="stat-label">進站流量下降<br>但這只是表象</div></div>
-      <div class="stat-item"><div class="stat-num">AI</div><div class="stat-label">使用者直接向<br>AI 提問</div></div>
-      <div class="stat-item"><div class="stat-num">0</div><div class="stat-label">零點擊——<br>不進入新聞網站</div></div>
-    </div>
-    <div class="quote-block">
-      <p>當進站的「讀者」不再是真人，不僅讓廣告營收模式失效，影響的更是新聞媒體的<strong>權威性</strong>與<strong>影響力</strong>。新聞機構必須思考：如何讓可信資訊進入AI時代的新資訊流通體系？</p>
-    </div>
+    <p class="body-text">媒體實驗室從數據發現，越來越多人透過 ChatGPT、Claude、Gemini 等 AI 服務獲取資訊。流量下降的影響將不同以往——當進站的「讀者」不再是真人，不僅讓廣告營收模式失效，影響的更是新聞媒體的權威性與影響力。</p>
+    <p class="body-text">這就是業界所說的<strong>零點擊時代</strong>。使用者不再必然進入新聞網站，而是直接向 AI 提問，由 AI 整合回答。</p>
+    <p class="body-text">媒體實驗室體認到這是中央社的重要任務：如何讓可信新聞資訊，進入 AI 時代的資訊流通體系。</p>
   </div>
 </div>
 
+<!-- 12 應對 -->
 <div class="slide slide-divider" data-title="我們的應對">
   <div class="slide-body" style="align-items:center;justify-content:center">
     <div class="div-year">應對策略</div>
@@ -242,6 +216,7 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
   </div>
 </div>
 
+<!-- 13 MCP架構 -->
 <div class="slide" data-title="MCP 架構">
   <div class="slide-title">MCP 服務架構——讓AI即時調用可信新聞</div>
   <div class="slide-body">
@@ -282,16 +257,13 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
   </div>
 </div>
 
-<div class="slide" data-title="MCP 問答示範">
-  <div class="slide-title">MCP 問答功能示範</div>
-  <div class="slide-body"><div class="video-wrap"><iframe src="https://drive.google.com/file/d/1QOXksnVnngxh5-KbGHgeNn73f1nrrs7J/preview" allowfullscreen></iframe></div></div>
-</div>
-
-<div class="slide" data-title="MCP 時間軸">
+<!-- 14 MCP時間軸 -->
+<div class="slide" data-title="MCP 時間軸示範">
   <div class="slide-title">MCP 時間軸查詢示範</div>
-  <div class="slide-body"><div class="video-wrap"><iframe src="https://drive.google.com/file/d/1-hFfPIGeE6XxYhrhFulRtfM2d0NfytDC/preview" allowfullscreen></iframe></div></div>
+  <div class="slide-body"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/aLHHwvBgzOU" allowfullscreen allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"></iframe></div></div>
 </div>
 
+<!-- 15 AskCNA -->
 <div class="slide" data-title="AskCNA">
   <div class="slide-title">AskCNA——服務相信中央社的忠實讀者</div>
   <div class="slide-body">
@@ -313,6 +285,7 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
   </div>
 </div>
 
+<!-- 16 結語 -->
 <div class="slide slide-end" data-title="結語">
   <div class="slide-body" style="align-items:center;justify-content:center">
     <div class="end-title">讓中央社新聞<br>持續為台灣社會發揮影響力</div>
@@ -328,7 +301,7 @@ ul.bullets li::before{content:"";display:block;width:6px;height:6px;border-radiu
 </div>
 <div id="chrome-bottom">
   <div id="nav-hint">← → 鍵盤導覽　F 全螢幕</div>
-  <div id="page-indicator">1 / 19</div>
+  <div id="page-indicator">1 / 16</div>
   <div id="nav-btns">
     <button class="nav-btn" id="btn-prev" onclick="navigate(-1)">← 上一頁</button>
     <button class="nav-btn" id="btn-next" onclick="navigate(1)">下一頁 →</button>
